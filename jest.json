@@ -1,0 +1,35 @@
+{
+    "collectCoverage": true,
+    "coverageDirectory": "./reports/coverage",
+    "reporters": [
+        "default",
+        [
+            "jest-junit",
+            {
+                "outputDirectory": "./reports/tests",
+                "uniqueOutputName": "true"
+            }
+        ]
+    ],
+    "coverageThreshold": {
+        "global": {
+            "branches": 80,
+            "functions": 95,
+            "lines": 95,
+            "statements": -15
+        }
+    },
+    "projects": [
+        {
+            "displayName": "tests",
+            "rootDir": "src",
+            "testRegex": ".spec.ts$",
+            "testEnvironment": "node",
+            "moduleFileExtensions": ["ts", "js", "json"],
+            "collectCoverageFrom": ["**/*.{ts,js,jsx}"],
+            "transform": {
+                "^.+\\.(t|j)s$": "ts-jest"
+            }
+        }
+    ]
+}
