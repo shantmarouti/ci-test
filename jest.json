@@ -11,6 +11,7 @@
             }
         ]
     ],
+    "coverageReporters": ["json", "lcov", "text", "clover", "cobertura"],
     "coverageThreshold": {
         "global": {
             "branches": 80,
