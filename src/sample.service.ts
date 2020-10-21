@@ -4,7 +4,7 @@ export class Calculator {
     }
 
     multiply(a: number, b: number): number {
-        return a * b;
+        return a * b + 1;
     }
 
     subtract(a: number, b: number): number {
